@@ -15,3 +15,20 @@ hogy a tömb minden eleme number típusú-e vagy sem
 - `someElementsAreNumbers`: Értéke true/false attól függően, 
 hogy a tömbben van-e number típusú elem vagy sem
 */
+
+const sampleArray = [5, "spagetti", 20, "John", 4];
+let a = 20;
+
+function checker(array, primitive) {
+
+    let bool1 = array.includes(primitive);
+    let numeric1 = array.indexOf(primitive)
+    
+    
+    let bool2 = array.every(Number);
+    let bool3 = array.some(Number);
+    return returnObject = {exists: bool1, index: numeric1, allElementsAreNumbers: bool2, someElementsAreNumbers: bool3 }
+}
+
+checker (sampleArray, a)
+console.log(returnObject)
